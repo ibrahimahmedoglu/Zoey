@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		967DECA529F851A9004CA6F2 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 967DECA429F851A9004CA6F2 /* OpenAISwift */; };
+		967DECAA29F9179F004CA6F2 /* prompt.txt in Resources */ = {isa = PBXBuildFile; fileRef = 967DECA929F9179F004CA6F2 /* prompt.txt */; };
 		96E5EA1629F7CE5E00BD1890 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5EA1529F7CE5E00BD1890 /* AppDelegate.swift */; };
 		96E5EA1829F7CE5E00BD1890 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5EA1729F7CE5E00BD1890 /* SceneDelegate.swift */; };
 		96E5EA1A29F7CE5E00BD1890 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5EA1929F7CE5E00BD1890 /* ViewController.swift */; };
 		96E5EA1D29F7CE5E00BD1890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E5EA1B29F7CE5E00BD1890 /* Main.storyboard */; };
 		96E5EA1F29F7CE6100BD1890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E5EA1E29F7CE6100BD1890 /* Assets.xcassets */; };
 		96E5EA2229F7CE6100BD1890 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E5EA2029F7CE6100BD1890 /* LaunchScreen.storyboard */; };
+		96E5EA2A29F7D33D00BD1890 /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5EA2929F7D33D00BD1890 /* AgeViewController.swift */; };
+		96E5EA2C29F7D6F700BD1890 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5EA2B29F7D6F700BD1890 /* PreferencesViewController.swift */; };
+		96E5EA2E29F7DAEC00BD1890 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5EA2D29F7DAEC00BD1890 /* Preferences.swift */; };
+		96E5EA3029F7E2BC00BD1890 /* GenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5EA2F29F7E2BC00BD1890 /* GenerateViewController.swift */; };
+		96E5EA3229F8044A00BD1890 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5EA3129F8044A00BD1890 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		967DECA929F9179F004CA6F2 /* prompt.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = prompt.txt; sourceTree = SOURCE_ROOT; };
 		96E5EA1229F7CE5E00BD1890 /* Zoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E5EA1529F7CE5E00BD1890 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E5EA1729F7CE5E00BD1890 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,11 @@
 		96E5EA1E29F7CE6100BD1890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96E5EA2129F7CE6100BD1890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96E5EA2329F7CE6100BD1890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E5EA2929F7D33D00BD1890 /* AgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
+		96E5EA2B29F7D6F700BD1890 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		96E5EA2D29F7DAEC00BD1890 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		96E5EA2F29F7E2BC00BD1890 /* GenerateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateViewController.swift; sourceTree = "<group>"; };
+		96E5EA3129F8044A00BD1890 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +44,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967DECA529F851A9004CA6F2 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		967DECA629F9107C004CA6F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96E5EA2D29F7DAEC00BD1890 /* Preferences.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		967DECA729F91088004CA6F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96E5EA1B29F7CE5E00BD1890 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		967DECA829F91091004CA6F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96E5EA1929F7CE5E00BD1890 /* ViewController.swift */,
+				96E5EA2929F7D33D00BD1890 /* AgeViewController.swift */,
+				96E5EA2B29F7D6F700BD1890 /* PreferencesViewController.swift */,
+				96E5EA2F29F7E2BC00BD1890 /* GenerateViewController.swift */,
+				96E5EA3129F8044A00BD1890 /* ResultViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		96E5EA0929F7CE5E00BD1890 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +98,14 @@
 		96E5EA1429F7CE5E00BD1890 /* Zoey */ = {
 			isa = PBXGroup;
 			children = (
+				967DECA829F91091004CA6F2 /* Controller */,
+				967DECA729F91088004CA6F2 /* View */,
+				967DECA629F9107C004CA6F2 /* Model */,
 				96E5EA1529F7CE5E00BD1890 /* AppDelegate.swift */,
 				96E5EA1729F7CE5E00BD1890 /* SceneDelegate.swift */,
-				96E5EA1929F7CE5E00BD1890 /* ViewController.swift */,
-				96E5EA1B29F7CE5E00BD1890 /* Main.storyboard */,
 				96E5EA1E29F7CE6100BD1890 /* Assets.xcassets */,
 				96E5EA2029F7CE6100BD1890 /* LaunchScreen.storyboard */,
+				967DECA929F9179F004CA6F2 /* prompt.txt */,
 				96E5EA2329F7CE6100BD1890 /* Info.plist */,
 			);
 			path = Zoey;
@@ -83,6 +127,9 @@
 			dependencies = (
 			);
 			name = Zoey;
+			packageProductDependencies = (
+				967DECA429F851A9004CA6F2 /* OpenAISwift */,
+			);
 			productName = Zoey;
 			productReference = 96E5EA1229F7CE5E00BD1890 /* Zoey.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +158,9 @@
 				Base,
 			);
 			mainGroup = 96E5EA0929F7CE5E00BD1890;
+			packageReferences = (
+				967DECA329F851A9004CA6F2 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 96E5EA1329F7CE5E00BD1890 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +177,7 @@
 			files = (
 				96E5EA2229F7CE6100BD1890 /* LaunchScreen.storyboard in Resources */,
 				96E5EA1F29F7CE6100BD1890 /* Assets.xcassets in Resources */,
+				967DECAA29F9179F004CA6F2 /* prompt.txt in Resources */,
 				96E5EA1D29F7CE5E00BD1890 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E5EA2C29F7D6F700BD1890 /* PreferencesViewController.swift in Sources */,
 				96E5EA1A29F7CE5E00BD1890 /* ViewController.swift in Sources */,
+				96E5EA2E29F7DAEC00BD1890 /* Preferences.swift in Sources */,
+				96E5EA3229F8044A00BD1890 /* ResultViewController.swift in Sources */,
 				96E5EA1629F7CE5E00BD1890 /* AppDelegate.swift in Sources */,
+				96E5EA2A29F7D33D00BD1890 /* AgeViewController.swift in Sources */,
 				96E5EA1829F7CE5E00BD1890 /* SceneDelegate.swift in Sources */,
+				96E5EA3029F7E2BC00BD1890 /* GenerateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +412,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		967DECA329F851A9004CA6F2 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		967DECA429F851A9004CA6F2 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 967DECA329F851A9004CA6F2 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96E5EA0A29F7CE5E00BD1890 /* Project object */;
 }
